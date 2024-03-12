@@ -19,3 +19,10 @@ static double GetAverage(int[] tab)
 int [] numbers = {1,2,4,5};
 double avg = GetAverage(numbers);
 Console.WriteLine(avg);
+
+
+
+static double GetMax(int[] tab)
+{
+    
+}
