@@ -13,9 +13,9 @@ static double GetAverage(int[] tab)
 {
     int sum = 0;
 
-    foreach (var zmienna in tab)
+    foreach (var x in tab)
     {
-        sum += zmienna;
+        sum += x;
 
     }
 
