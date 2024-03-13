@@ -16,13 +16,26 @@ static double GetAverage(int[] tab)
     return (double)sum / tab.Length;
 }
 
-int [] numbers = {1,2,4,5};
+int [] numbers = {1,2,6,10,4,5,8};
 double avg = GetAverage(numbers);
-Console.WriteLine(avg);
+Console.WriteLine("srednia: "+avg);
 
 
 
-static double GetMax(int[] tab)
+static int GetMax(int[] tab)
 {
-    
+    int maxValue = tab[0];
+    foreach (int num in tab)
+    {
+        if (num > maxValue)
+        {
+            maxValue = num;
+        }
+    }
+    return maxValue;
 }
+
+
+int maksymalna = GetMax(numbers);
+Console.WriteLine("maksymalna: "+maksymalna);
+
