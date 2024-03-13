@@ -12,9 +12,11 @@ Console.WriteLine("=============================================");
 static double GetAverage(int[] tab)
 {
     int sum = 0;
+
     foreach (var zmienna in tab)
     {
         sum += zmienna;
+
     }
 
     return (double)sum / tab.Length;
